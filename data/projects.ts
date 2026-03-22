@@ -29,51 +29,7 @@ export type ProjectItem = {
 };
 
 export const projects: ProjectItem[] = [
-  {
-    id: "mcdonalds-hell",
-    title: "McDonalds:\nThis is Hell II",
-    category: "Commercial",
-    categoryStyle: "commercial",
-    role: "Executive Producer",
-    roleIcon: "movie_edit",
-    description:
-      "A fast-paced branded film driven by chaotic humor and sharp visual rhythm.",
-    tags: ["4K", "FAST CUT", "COMEDY"],
-    videoUrl: "https://www.youtube.com/watch?v=prQtL3J1ICE",
-    titleAccent: "primary",
-    sectionTone: "low",
-    shadowVariant: "neutral",
-  },
-  {
-    id: "ampm-ai-delivery",
-    title: "AMPM:\nAI Delivery",
-    category: "Commercial",
-    categoryStyle: "commercial",
-    role: "Executive Producer",
-    roleIcon: "movie_edit",
-    description:
-      "A futuristic branded film exploring fast delivery through an AI-driven urban experience.",
-    tags: ["4K", "FUTURISTIC", "INNOVATIVE"],
-    videoUrl: "https://www.youtube.com/watch?v=H9UL9G6qfW4",
-    titleAccent: "secondary",
-    sectionTone: "default",
-    shadowVariant: "primary",
-  },
-  {
-    id: "ampm-city-market",
-    title: "am:pm City Market",
-    category: "Commercial",
-    categoryStyle: "commercial",
-    role: "Executive Producer",
-    roleIcon: "movie_edit",
-    description:
-      "A dynamic city-driven campaign blending speed, accessibility, and modern urban lifestyle.",
-    tags: ["4K", "URBAN", "INNOVATIVE"],
-    videoUrl: "https://www.youtube.com/watch?v=pGXlXBxRd_E",
-    titleAccent: "tertiary",
-    sectionTone: "high",
-    shadowVariant: "tertiary",
-  },
+ 
   {
     id: "bridal-fashion-campaign",
     title: "Bridal Fashion\nCampaign",
@@ -133,7 +89,52 @@ export const projects: ProjectItem[] = [
     titleAccent: "primary",
     sectionTone: "default",
     shadowVariant: "primary",
-  }
+  },
+  {
+    id: "mcdonalds-hell",
+    title: "McDonalds:\nThis is Hell II",
+    category: "Commercial",
+    categoryStyle: "commercial",
+    role: "Executive Producer",
+    roleIcon: "movie_edit",
+    description:
+      "A fast-paced branded film driven by chaotic humor and sharp visual rhythm.",
+    tags: ["4K", "FAST CUT", "COMEDY"],
+    videoUrl: "https://www.youtube.com/watch?v=prQtL3J1ICE",
+    titleAccent: "primary",
+    sectionTone: "low",
+    shadowVariant: "neutral",
+  },
+  {
+    id: "ampm-ai-delivery",
+    title: "AMPM:\nAI Delivery",
+    category: "Commercial",
+    categoryStyle: "commercial",
+    role: "Executive Producer",
+    roleIcon: "movie_edit",
+    description:
+      "A futuristic branded film exploring fast delivery through an AI-driven urban experience.",
+    tags: ["4K", "FUTURISTIC", "INNOVATIVE"],
+    videoUrl: "https://www.youtube.com/watch?v=H9UL9G6qfW4",
+    titleAccent: "secondary",
+    sectionTone: "default",
+    shadowVariant: "primary",
+  },
+  {
+    id: "ampm-city-market",
+    title: "am:pm City Market",
+    category: "Commercial",
+    categoryStyle: "commercial",
+    role: "Executive Producer",
+    roleIcon: "movie_edit",
+    description:
+      "A dynamic city-driven campaign blending speed, accessibility, and modern urban lifestyle.",
+    tags: ["4K", "URBAN", "INNOVATIVE"],
+    videoUrl: "https://www.youtube.com/watch?v=pGXlXBxRd_E",
+    titleAccent: "tertiary",
+    sectionTone: "high",
+    shadowVariant: "tertiary",
+  },
   /*
   // Example: Google Drive (public / “anyone with link” video; replace FILE_ID)
   {
