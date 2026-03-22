@@ -2,7 +2,13 @@
 @import "material-symbols/index.css";
 
 html {
-  scroll-padding-top: 7rem;
+  scroll-padding-top: 5.75rem;
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: 7rem;
+  }
 }
 
 @theme inline {

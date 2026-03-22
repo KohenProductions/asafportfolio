@@ -74,7 +74,66 @@ export const projects: ProjectItem[] = [
     sectionTone: "high",
     shadowVariant: "tertiary",
   },
-
+  {
+    id: "bridal-fashion-campaign",
+    title: "Bridal Fashion\nCampaign",
+    category: "Fashion Film",
+    categoryStyle: "brand-film",
+    role: "Editor",
+    roleIcon: "movie_edit",
+    description:
+      "A refined bridal fashion campaign combining cinematic storytelling with modern aesthetics. Created for multi-platform distribution across TV, web, and social, the project blends both horizontal and vertical formats to deliver a cohesive visual language.",
+    tags: ["FASHION", "BRIDAL", "MULTI FORMAT"],
+    videoUrl: "https://drive.google.com/file/d/1qa8OOv4ttEBaQOOWPuX6UE7WdhWLpEBi/view?usp=sharing",
+    titleAccent: "secondary",
+    sectionTone: "default",
+    shadowVariant: "primary",
+  },
+  {
+    id: "dhl-israel-film",
+    title: "DHL Israel\nBrand Film",
+    category: "Brand Film",
+    categoryStyle: "brand-film",
+    role: "Editor",
+    roleIcon: "movie_edit",
+    description:
+      "A corporate brand film telling the story of DHL Israel and its ongoing contribution to the Israeli community. Edited for Kohen Productions, the film highlights the company’s scale, values, and continuous impact.",
+    tags: ["CORPORATE", "BRAND FILM", "STORYTELLING"],
+    videoUrl: "https://drive.google.com/file/d/1WrRRdr9JBp2DPK5idcZIabLFaS3NnYc_/view?usp=sharing",
+    titleAccent: "primary",
+    sectionTone: "default",
+    shadowVariant: "neutral",
+  },
+  {
+    id: "chivas-fantastic",
+    title: "Chivas Regal\nExperience",
+    category: "Brand Film",
+    categoryStyle: "brand-film",
+    role: "Editor",
+    roleIcon: "movie_edit",
+    description:
+      "A refined brand film created for Chivas Regal in collaboration with the Fantastic restaurant in Tel Aviv. The project captures a curated evening of elegance, flavor, and atmosphere — blending premium whisky culture with a contemporary culinary experience. Edited for Kohen Productions.",
+    tags: ["LUXURY", "WHISKY", "CULINARY"],
+    videoUrl: "https://drive.google.com/file/d/1YArOvJ5K8dM2AB37jXQxsGK_uOfUpBrV/view?usp=sharing",
+    titleAccent: "tertiary",
+    sectionTone: "default",
+    shadowVariant: "tertiary",
+  },
+  {
+    id: "glenfiddich-campaign",
+    title: "Glenfiddich\nCampaign",
+    category: "Brand Film",
+    categoryStyle: "brand-film",
+    role: "Editor & Creative",
+    roleIcon: "movie_edit",
+    description:
+      "A premium brand film for Glenfiddich, crafted to reflect the brand’s heritage, precision, and timeless character. The project blends refined visual language with a strong creative direction, delivering a cinematic interpretation of modern whisky culture. Edited and creatively developed for Kohen Productions.",
+    tags: ["LUXURY", "WHISKY", "CINEMATIC"],
+    videoUrl: "https://drive.google.com/file/d/1MzQZrf0XsAMT73SLmc2sDgX8gfYcC6qI/view?usp=sharing",
+    titleAccent: "primary",
+    sectionTone: "default",
+    shadowVariant: "primary",
+  }
   /*
   // Example: Google Drive (public / “anyone with link” video; replace FILE_ID)
   {

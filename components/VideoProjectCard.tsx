@@ -43,12 +43,12 @@ export function VideoProjectCard({ project, sectionId }: VideoProjectCardProps) 
   return (
     <section
       id={sectionId}
-      className={`group project-card mb-12 flex flex-col items-center gap-16 px-8 py-16 md:flex-row md:px-24 ${tone}`}
+      className={`group project-card mb-10 flex min-w-0 flex-col items-center gap-10 px-5 py-10 sm:mb-12 sm:gap-12 sm:px-6 sm:py-12 md:gap-16 md:px-24 md:py-16 ${tone} md:flex-row`}
     >
       <div
-        className={`relative w-full overflow-hidden rounded-xl bg-surface-container-highest md:w-3/5 ${shadowClasses[shadow]}`}
+        className={`relative w-full min-w-0 overflow-hidden rounded-xl bg-surface-container-highest md:w-3/5 ${shadowClasses[shadow]}`}
       >
-        <div className="relative aspect-video transition-transform duration-700 group-hover:scale-105">
+        <div className="relative aspect-video w-full max-w-full transition-transform duration-700 md:group-hover:scale-105">
           <VideoEmbed
             videoUrl={project.videoUrl}
             title={titleLines(project.title).join(" ")}
@@ -56,15 +56,15 @@ export function VideoProjectCard({ project, sectionId }: VideoProjectCardProps) 
         </div>
         <div className="scrubber-line absolute bottom-0 left-0" />
       </div>
-      <div className="w-full space-y-8 md:w-2/5">
+      <div className="w-full min-w-0 space-y-5 sm:space-y-6 md:w-2/5 md:space-y-8">
         <div
-          className={`inline-block rounded-full px-4 py-1 font-label text-[10px] uppercase tracking-widest ${categoryClasses[project.categoryStyle]}`}
+          className={`inline-block rounded-full px-3 py-1 font-label text-[9px] uppercase tracking-widest sm:px-4 sm:text-[10px] ${categoryClasses[project.categoryStyle]}`}
         >
           {project.category}
         </div>
         <div>
           <h2
-            className={`mb-2 font-headline text-4xl font-bold md:text-5xl ${titleClasses[project.titleAccent]}`}
+            className={`mb-1.5 font-headline text-2xl font-bold leading-tight sm:mb-2 sm:text-3xl md:text-4xl lg:text-5xl ${titleClasses[project.titleAccent]}`}
           >
             {titleLines(project.title).map((line, i, arr) => (
               <span key={i}>
@@ -73,21 +73,21 @@ export function VideoProjectCard({ project, sectionId }: VideoProjectCardProps) 
               </span>
             ))}
           </h2>
-          <p className="flex items-center gap-2 font-label text-sm text-on-surface-variant">
-            <span className="material-symbols-outlined text-[16px]">
+          <p className="flex flex-wrap items-center gap-2 font-label text-xs text-on-surface-variant sm:text-sm">
+            <span className="material-symbols-outlined shrink-0 text-[15px] sm:text-[16px]">
               {project.roleIcon}
             </span>
-            Role: {project.role}
+            <span className="min-w-0">Role: {project.role}</span>
           </p>
         </div>
-        <p className="max-w-md font-body text-lg leading-relaxed text-on-surface/80">
+        <p className="max-w-md font-body text-base leading-relaxed text-on-surface/80 sm:text-lg">
           {project.description}
         </p>
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-2 sm:gap-3 md:gap-4">
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="rounded-xl bg-surface-container-highest px-4 py-1.5 font-label text-xs text-on-surface-variant"
+              className="rounded-xl bg-surface-container-highest px-3 py-1.5 font-label text-[0.65rem] text-on-surface-variant sm:px-4 sm:text-xs"
             >
               {tag}
             </span>

@@ -10,8 +10,8 @@ export function VideoEmbed({ videoUrl, title }: VideoEmbedProps) {
 
   if (resolved.kind === "unsupported") {
     return (
-      <div className="flex aspect-video w-full items-center justify-center rounded-xl bg-surface-container-highest px-6 text-center">
-        <p className="font-body text-sm leading-relaxed text-on-surface-variant">
+      <div className="flex aspect-video w-full max-w-full items-center justify-center rounded-xl bg-surface-container-highest px-4 text-center sm:px-6">
+        <p className="font-body text-xs leading-relaxed text-on-surface-variant sm:text-sm">
           {resolved.reason}
         </p>
       </div>
@@ -29,7 +29,7 @@ export function VideoEmbed({ videoUrl, title }: VideoEmbedProps) {
       src={resolved.embedUrl}
       allow={allow}
       allowFullScreen
-      className="h-full w-full rounded-xl border-0 object-cover"
+      className="absolute inset-0 h-full w-full max-w-full rounded-xl border-0"
     />
   );
 }

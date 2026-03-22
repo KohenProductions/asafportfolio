@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div id="top" className="min-h-screen">
       <Navbar />
-      <main className="pt-32">
+      <main className="pt-24 sm:pt-28 md:pt-32">
         <Hero />
         {projects.map((project, index) => (
           <VideoProjectCard
