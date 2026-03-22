@@ -12,7 +12,7 @@ export function Hero() {
         >
           play_circle
         </span>
-        SELECTED REELS 2024
+        SELECTED REELS
       </div>
     </header>
   );
